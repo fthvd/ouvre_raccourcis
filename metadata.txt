@@ -1,0 +1,21 @@
+[general]
+name=OuvreRaccourcis
+qgisMinimumVersion=3.0
+qgisMaximumVersion=4.99
+description=Opens IGN Remonter le Temps, Google Maps, Google Earth and GéoURBA at the current QGIS map center and zoom.
+about=OuvreRaccourcis ouvre rapidement IGN Remonter le Temps, Google Maps, Google Earth Web et GéoURBA (Géoportail de l’Urbanisme) sur le centre courant du canevas QGIS. Le niveau de zoom est calculé dynamiquement à partir de la résolution réelle de l'affichage QGIS afin de conserver une échelle visuelle comparable, quel que soit le SCR du projet. Google Earth utilise une distance de caméra équivalente à l'étendue verticale affichée dans QGIS.
+version=1.1.3
+author=Assistant
+email=example@example.com
+category=Web
+icon=icons/ign.svg
+tags=web,map,zoom,IGN,Google Maps,Google Earth,GéoURBA,Géoportail de l’Urbanisme,GPU,urbanisme,geolocation
+changelog=1.1.3 - Ajout du bouton Ouvre le GPU avec icône SVG dédiée ; ouverture du Géoportail de l’Urbanisme au centre du canevas avec reprise dynamique du zoom QGIS ; intégration dans la barre ouvre_raccourcis et nettoyage des anciennes installations de test.
+    1.1.2 - Barre d’outils dédiée « ouvre_raccourcis » ; boutons remplacés par des icônes SVG IGN, Maps et Google Earth ; infobulles conservant exactement les noms historiques des trois outils ; correction du calcul du zoom sous QGIS 3.44/QGIS 4 sans appel fragile à QgsMapToPixel.toMapCoordinates(float, float).
+    1.1.1 - Remplacement fiable de l’ancienne installation : nettoyage des dossiers résiduels portant le même nom de plugin et suppression complète des anciennes actions QGIS lors d’une mise à jour à chaud.
+    1.1.0 - Report dynamique du centre et du zoom QGIS vers IGN Remonter le Temps et Google Maps ; calcul d'une distance de caméra équivalente pour Google Earth ; ouverture via le navigateur par défaut ; nettoyage et enrichissement des métadonnées ; compatibilité déclarée QGIS 3 et QGIS 4.
+    1.0 - Première version.
+experimental=False
+deprecated=False
+server=False
+hasProcessingProvider=False
